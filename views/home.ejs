@@ -1,0 +1,21 @@
+<%- include("partials/header"); -%>
+
+<div class="all-products">
+    
+   <%products.forEach(function(product){%>
+        <div class="products">
+            <img src="/img/clothes (1).png" alt="">
+                <a href="/product/<%=product.name%>"><h3><%=product.name%></h3></a>
+                <p><%=product.detail%></p>
+                <button><img src="/img/shopping-cart.png" alt="" style="width: 2rem;">Cart</button>
+        </div>
+    <%});%>
+    
+</div>
+
+
+
+
+
+
+<%- include("partials/footer"); -%>

@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+}
+
+.background-img{
+    width: 100%;
+    position: relative;
+    margin: 0;
+}
+
+.brand{
+    position: absolute;
+    top: 5rem;
+    left: 8rem;
+}
+
+.need-help{
+    position: absolute;
+    top: 5rem;
+    right: 8rem;
+}
+
+.search{
+    position: absolute;
+    top: 15rem;
+    width: 100%;
+    text-align: center;
+    
+}
+
+footer .promotions{
+    width: 100%;
+}
+
+.promotions h1{
+    color: white;
+}
+
+.promotions img{
+    width: 5rem;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+}
+
+.left-container {
+    width: 30%;
+}
+
+.right-container {
+    width: 70%;
+
+}
+
+.product-type img{
+    width: 5rem;
+}
+
+.all-products {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, 400px);
+}
+
+.products {
+    border: solid black 1px;
+
+}
+
+
+#each-product {
+    border: black solid 2px;
+}
+
+
+
+.productComment{
+    border: black solid 1px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+

@@ -1,0 +1,51 @@
+<%- include("partials/header"); -%>
+
+<table id="each-product">
+    <tr>
+        <td>
+            <img src="/img/clothes (1).png" alt="">
+        </td>
+        <td>
+        
+            <h1><%=product.name%></h1>
+            <p> <%=product.detail%></p>
+            <p>$<%=product.price%></p>
+            <button><img src="../public/img/shopping-cart.png" alt="" style="width: 2rem;">Cart</button>
+        </td>
+    </tr>
+</table>
+
+<h1>Comments</h1>
+
+<%users.forEach(function(user){ %>
+<div class="productComment">
+    <tr>
+        <td>
+            <h3>
+                <%=user.name%>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>
+                <%=user.comment%>
+            </p>
+        </td>
+    </tr>
+</div>
+<%}); %>
+
+<form action="/product/<%=product.name%>" method="post">
+    <input type="text" name="userName" placeholder="Yourname">
+    <br>
+    <textarea name="userComment" id="" cols="30" rows="10" style="width: 99%;" placeholder="Comment"></textarea>
+    <br>
+    <button type="submit">Send</button>
+</form>
+
+
+
+
+
+<%- include("partials/footer"); -%>
